@@ -1,0 +1,115 @@
+{
+  "default_league_type": "normal",
+  "min_edge": 0.03,
+  "confidence_weights": {
+    "prob_margin": 0.25,
+    "edge_size": 0.35,
+    "overround": 0.15,
+    "league_reliability": 0.15,
+    "goal_variance": 0.10
+  },
+  "league_parameters": {
+    "normal": {
+      "under_2.5_baseline": 0.48,
+      "under_3.5_baseline": 0.65,
+      "over_2.5_baseline": 0.52,
+      "min_under_2.5_odds": 1.85,
+      "min_under_3.5_odds": 1.70,
+      "min_over_2.5_odds": 2.20,
+      "goal_variance": "normal",
+      "conf_multiplier_ou": 1.00,
+      "conf_multiplier_1x2": 1.10,
+      "edge_multiplier_ou": 1.00,
+      "edge_multiplier_1x2": 1.10
+    },
+    "low_scoring": {
+      "under_2.5_baseline": 0.58,
+      "under_3.5_baseline": 0.72,
+      "over_2.5_baseline": 0.42,
+      "min_under_2.5_odds": 1.75,
+      "min_under_3.5_odds": 1.60,
+      "min_over_2.5_odds": 2.40,
+      "goal_variance": "low",
+      "conf_multiplier_ou": 1.15,
+      "conf_multiplier_1x2": 1.05,
+      "edge_multiplier_ou": 1.15,
+      "edge_multiplier_1x2": 1.00
+    },
+    "high_scoring": {
+      "under_2.5_baseline": 0.38,
+      "under_3.5_baseline": 0.55,
+      "over_2.5_baseline": 0.62,
+      "min_under_2.5_odds": 2.20,
+      "min_under_3.5_odds": 1.85,
+      "min_over_2.5_odds": 1.85,
+      "goal_variance": "high",
+      "conf_multiplier_ou": 0.85,
+      "conf_multiplier_1x2": 0.95,
+      "edge_multiplier_ou": 0.90,
+      "edge_multiplier_1x2": 0.95
+    },
+    "reserve": {
+      "under_2.5_baseline": 0.42,
+      "under_3.5_baseline": 0.68,
+      "over_2.5_baseline": 0.58,
+      "min_under_2.5_odds": 2.00,
+      "min_under_3.5_odds": 1.55,
+      "min_over_2.5_odds": 1.80,
+      "goal_variance": "very_high",
+      "conf_multiplier_ou": 1.20,
+      "conf_multiplier_1x2": 0.90,
+      "edge_multiplier_ou": 1.20,
+      "edge_multiplier_1x2": 0.90
+    },
+    "youth": {
+      "under_2.5_baseline": 0.35,
+      "under_3.5_baseline": 0.55,
+      "over_2.5_baseline": 0.65,
+      "min_under_2.5_odds": 2.20,
+      "min_under_3.5_odds": 1.70,
+      "min_over_2.5_odds": 1.90,
+      "goal_variance": "very_high",
+      "conf_multiplier_ou": 1.10,
+      "conf_multiplier_1x2": 0.85,
+      "edge_multiplier_ou": 1.10,
+      "edge_multiplier_1x2": 0.85
+    },
+    "srl": {
+      "under_2.5_baseline": 0.58,
+      "under_3.5_baseline": 0.75,
+      "over_2.5_baseline": 0.42,
+      "min_under_2.5_odds": 1.80,
+      "min_under_3.5_odds": 1.45,
+      "min_over_2.5_odds": 2.30,
+      "goal_variance": "low",
+      "conf_multiplier_ou": 1.20,
+      "conf_multiplier_1x2": 1.15,
+      "edge_multiplier_ou": 1.15,
+      "edge_multiplier_1x2": 1.10
+    },
+    "women": {
+      "under_2.5_baseline": 0.52,
+      "under_3.5_baseline": 0.70,
+      "over_2.5_baseline": 0.48,
+      "min_under_2.5_odds": 1.85,
+      "min_under_3.5_odds": 1.50,
+      "min_over_2.5_odds": 2.10,
+      "goal_variance": "normal",
+      "conf_multiplier_ou": 1.15,
+      "conf_multiplier_1x2": 1.05,
+      "edge_multiplier_ou": 1.15,
+      "edge_multiplier_1x2": 1.00
+    }
+  },
+  "league_classification": {
+    "low_scoring": [
+      "Tasmania Southern", "Northern NSW NPL", "K-League", "Serie A",
+      "Ligue 1", "Brasileirao", "Argentina", "Liga MX", "Uruguay"
+    ],
+    "high_scoring": [
+      "Eredivisie", "Bundesliga", "MLS", "Australian A-League"
+    ],
+    "reserve": ["Reserve", "Reserves"],
+    "youth": ["U23", "U20", "U19", "Youth"]
+  }
+}

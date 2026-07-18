@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: betting-telegram-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: ODDS_API_KEY
+        sync: false
+      - key: WINDOW_HOURS
+        value: "12"
+      - key: SPORT_KEYS
+        value: "soccer_epl"
+      - key: MIN_CONFIDENCE
+        value: "55"
+      - key: MAX_RESULTS
+        value: "8"
+    # RENDER_EXTERNAL_URL and PORT are injected automatically by Render for
+    # Web Services -- no need to set them yourself. main.py detects
+    # RENDER_EXTERNAL_URL and switches into webhook mode automatically.
