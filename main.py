@@ -62,7 +62,7 @@ DRAW_MARGIN_THRESHOLD = 0.10
 LEGS_REQUIRED = 4
 
 # Only consider matches kicking off within this many hours from now.
-HOURS_WINDOW = 12
+HOURS_WINDOW = 24
 
 ODDS_API_BASE_URL = "https://api.the-odds-api.com/v4"
 
