@@ -25,8 +25,8 @@ from bot import format_recommendation, format_parlay
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
-WINDOW_HOURS = int(os.environ.get("WINDOW_HOURS", 12))
-_sport_keys_raw = os.environ.get("SPORT_KEYS", "soccer_epl").strip()
+WINDOW_HOURS = int(os.environ.get("WINDOW_HOURS", 24))
+_sport_keys_raw = os.environ.get("SPORT_KEYS", "soccer_argentina_primera_division").strip()
 SCAN_ALL_LEAGUES = _sport_keys_raw.lower() == "all"
 SPORT_KEYS = [] if SCAN_ALL_LEAGUES else [s.strip() for s in _sport_keys_raw.split(",")]
 MIN_CONFIDENCE = int(os.environ.get("MIN_CONFIDENCE", 55))
